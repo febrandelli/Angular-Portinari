@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { PoMenuItem } from '@portinari/portinari-ui';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'crud-portinari';
+  readonly menus: Array<PoMenuItem> = [
+    { label: 'Pessoas', link: '/people' }
+  ];
 }
